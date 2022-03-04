@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- bài 1 : -->
+class Animal {
+    constructor(name) {
+      this.name = name;
+    }
+  }
+
+  class Rabbit extends Animal {
+    
+    constructor(name) {
+        super(name)
+        <!--  super() để biết Animal class mà Rabbit class muốn extend -->
+        
+      this.created = Date.now();
+    }
+  }
+
+  let rabbit = new Rabbit("White Rabbit"); // Error: this is not defined
+  alert(rabbit.name);
+
+
+
+<!-- bài 2 -->
+
+  <div id="stopwatch">
+    <button id="addStopwatch">Add +</button>
+    <button type="button"  id="startAll">
+        Start All
+    </button>
+
+    <button type="button"  id="stopAll">
+        Stop All 
+    </button>
+
+    
+        <button type="button"  id="pause">
+            Pause 
+        </button>
+</div>
+
+    <script src="./3_component.js" type="module"></script>
+</body>
+</html>
+    <script src="./index.js"></script>
+</body>
+</html>
